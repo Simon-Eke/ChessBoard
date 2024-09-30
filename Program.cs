@@ -4,8 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Pick a number between 1-10: ");
-            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Welcome to the chessboard. How many rows and columns do you want?");
+            Console.WriteLine("\nPick a number between 1-10: ");
+            int number;
+            bool success = int.TryParse(Console.ReadLine(), out number);
+
 
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
